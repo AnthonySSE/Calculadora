@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+.calculadora-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: auto;
+}
+
+.historial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: auto;
+}
+
+.title {
+    padding: 0 0 25px 25px; 
+}
+
+.output {
+    display: flex;
+    justify-content: end;
+    padding-bottom: 25px;
+}
+
+
+#display {
+    width: 100%;
+    height: 200px;
+    text-align: end;
+    font-size: 50px;
+    border: none;
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 400;
+    caret-color: transparent;
+}
+
+#display:focus {
+    outline: none;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 70vh;
+}
+
+.first-row,
+.second-row,
+.third-row,
+.fourth-row,
+.fifth-row {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: #e0e0e0;
+}
+
+.btn-dark {
+    background-color: #e0e0e0;
+}
+
+.btn-dark:hover {
+    background-color: #f2f2f2;
+}
+
+
+.btn-equal {
+    background-color: #ffa2a2;
+}
+
+.btn-equal:hover {
+    background-color: #ff8080;
+}
+
+.historial {
+    display: flex;
+    justify-content: flex-start;
+    justify-self: flex-start;
+    align-items: flex-start;
+}
+
+.historial-title {
+    display: inline-block;
+    position: relative;
+}
+
+.historial-title::after {
+    content: "";
+    position: absolute;
+    left: 40%;
+    bottom: 0;
+    width: 25%;
+    height: 3px;
+    background-color: #DE5F5B; 
+    border-radius: 2px;
+}
+
+.historial-title:hover {
+    color: #6b6b6b;
+}
+
+.historial-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+}

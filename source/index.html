@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Calculadora Básica</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculadora-container">
+        <div class="title">
+          <h2>Estándar</h2>
+        </div>
+        <div class="output">
+          <input type="text" placeholder="0" id="display" maxlength="16" />
+        </div>
+        <div class="buttons">
+          <div class="first-row">
+            <button class="btn btn-dark">%</button>
+            <button class="btn btn-dark">CE</button>
+            <button class="btn btn-dark">C</button>
+            <button class="btn btn-dark"><img src="/resources/delete.svg"></button>
+          </div>
+          <div class="second-row">
+            <button class="btn btn-dark">¹⁄ₓ</button>
+            <button class="btn btn-dark">x<sup>2</sup></button>
+            <button class="btn btn-dark"><i class="fa-solid fa-square-root-variable"></i></button>
+            <button class="btn btn-dark"><i class="fa-solid fa-divide"></i></button>
+          </div>
+          <div class="third-row">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn btn-dark">x</button>
+          </div>
+          <div class="fourth-row">
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn btn-dark">-</button>
+          </div>
+          <div class="fifth-row">
+            <button class="btn">+/-</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn btn-equal btn-dark">=</button>
+          </div>
+        </div>
+      </div>
+        <div class="historial">
+          <div class="historial-title">
+            <h2>Historial</h2>
+          </div>
+          <div class="historial-content">
+            <div class="historial-results">No hay historial todavía</div>
+          </div>
+        </div>
+    </div>
+  </body>
+
+  <script src="./source/script.js"></script>
+  <script src="https://kit.fontawesome.com/ade61cc211.js" crossorigin="anonymous"></script>
+</html>
