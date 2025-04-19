@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     cursor: default;
     user-select: none;
+    font-family: Roboto, Poppins;
 }
 
 .container {
@@ -11,13 +14,14 @@
     flex-direction: row;
     height: 100vh;
     width: 100%;
-    background-color: #f2f2f2;
+    background-color: #202020;
+    color: #FFF;
 }
 
 .calculadora-container {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 80%;
     height: auto;
 }
 
@@ -26,12 +30,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 30%;
+    width: 20%;
     height: auto;
 }
 
 .title {
     padding: 0 0 25px 25px; 
+}
+
+.title h2 {
+    font-weight: 600;
 }
 
 .output {
@@ -47,8 +55,8 @@
     text-align: end;
     font-size: 50px;
     border: none;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #202020;
+    color: #FFF;
     font-weight: 400;
     caret-color: transparent;
 }
@@ -70,7 +78,8 @@
 .second-row,
 .third-row,
 .fourth-row,
-.fifth-row {
+.fifth-row,
+.sixth-row {
     display: flex;
     width: 100%;
     height: 100%;
@@ -79,31 +88,33 @@
 .btn {
     width: 100%;
     height: 100%;
-    background-color: #f2f2f2;
-    color: #333;
+    background-color: #505052;
+    color: #FFF;
     font-weight: 600;
     font-size: 24px;
+    border-radius: 2%;
+    border: 1px solid black;
 }
 
 .btn:hover {
-    background-color: #e0e0e0;
+    background-color: #313131;
 }
 
 .btn-dark {
-    background-color: #e0e0e0;
+    background-color: #323232;
 }
 
 .btn-dark:hover {
-    background-color: #f2f2f2;
+    background-color: #3C3C3C;
 }
 
 
 .btn-equal {
-    background-color: #ffa2a2;
+    background-color: #F46762;
 }
 
 .btn-equal:hover {
-    background-color: #ff8080;
+    background-color: #DE5F5B;
 }
 
 .historial {
@@ -133,10 +144,20 @@
     color: #6b6b6b;
 }
 
+.historial-title h2 {
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .historial-content {
     display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     margin-top: 25px;
+}
+
+.historial-results {
+    font-weight: 300;
+    font-size: 12px;
 }

@@ -13,38 +13,44 @@
           <h2>Estándar</h2>
         </div>
         <div class="output">
-          <input type="text" placeholder="0" id="display" maxlength="16" />
+          <input type="text" value="0" id="display" autocomplete="off" />
         </div>
         <div class="buttons">
           <div class="first-row">
-            <button class="btn btn-dark">%</button>
-            <button class="btn btn-dark">CE</button>
-            <button class="btn btn-dark">C</button>
-            <button class="btn btn-dark"><img src="/resources/delete.svg"></button>
+            <button class="btn btn-dark" id="btn-percentage">%</button>
+            <button class="btn btn-dark" id="btn-clear">CE</button>
+            <button class="btn btn-dark" id="btn-clear-all">C</button>
+            <button class="btn btn-dark" id="btn-delete"><img src="/resources/delete.svg"></button>
           </div>
           <div class="second-row">
-            <button class="btn btn-dark">¹⁄ₓ</button>
-            <button class="btn btn-dark">x<sup>2</sup></button>
-            <button class="btn btn-dark"><i class="fa-solid fa-square-root-variable"></i></button>
-            <button class="btn btn-dark"><i class="fa-solid fa-divide"></i></button>
+            <button class="btn btn-dark" id="one-divide-by-x">¹⁄ₓ</button>
+            <button class="btn btn-dark" id="square-x">x<sup>2</sup></button>
+            <button class="btn btn-dark" id="square-root"><i class="fa-solid fa-square-root-variable"></i></button>
+            <button class="btn btn-dark" id="divide"><i class="fa-solid fa-divide"></i></button>
           </div>
           <div class="third-row">
-            <button class="btn">7</button>
-            <button class="btn">8</button>
-            <button class="btn">9</button>
-            <button class="btn btn-dark">x</button>
+            <button class="btn" value="7">7</button>
+            <button class="btn" value="8">8</button>
+            <button class="btn" value="9">9</button>
+            <button class="btn btn-dark" id="multiply">x</button>
           </div>
           <div class="fourth-row">
-            <button class="btn">4</button>
-            <button class="btn">5</button>
-            <button class="btn">6</button>
-            <button class="btn btn-dark">-</button>
+            <button class="btn" value="4">4</button>
+            <button class="btn" value="5">5</button>
+            <button class="btn" value="6">6</button>
+            <button class="btn btn-dark" id="subtract">-</button>
           </div>
           <div class="fifth-row">
-            <button class="btn">+/-</button>
-            <button class="btn">0</button>
-            <button class="btn">.</button>
-            <button class="btn btn-equal btn-dark">=</button>
+            <button class="btn" value="1">1</button>
+            <button class="btn" value="2">2</button>
+            <button class="btn" value="3">3</button>
+            <button class="btn btn-dark" id="add">+</button>
+          </div>
+          <div class="sixth-row">
+            <button class="btn" id="sign">+/-</button>
+            <button class="btn" value="0">0</button>
+            <button class="btn" id="dot">.</button>
+            <button class="btn btn-equal btn-dark" id="equal">=</button>
           </div>
         </div>
       </div>
@@ -59,6 +65,6 @@
     </div>
   </body>
 
-  <script src="./source/script.js"></script>
+  <script src="./script.js"></script>
   <script src="https://kit.fontawesome.com/ade61cc211.js" crossorigin="anonymous"></script>
 </html>
