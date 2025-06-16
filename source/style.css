@@ -43,17 +43,32 @@
 }
 
 .output {
-    display: flex;
-    justify-content: end;
-    padding-bottom: 25px;
+    position: relative; /* Asegura que los elementos internos se posicionen bien si usas absolute */
+    width: 100%;
+    display: flex; /* Organiza los elementos en columna */
+    flex-direction: column; /* Apila el historial encima del display principal */
+    align-items: flex-end; /* Alinea el texto a la derecha */
+    justify-content: flex-end; /* Alinea los elementos al final del contenedor */
+    padding: 10px; /* Un poco de espacio */
+    box-sizing: border-box;
 }
 
+.history-display {
+    min-height: 20px; /* Altura para que siempre se vea */
+    font-size: 1.2em; /* Más pequeño que el display principal */
+    color: #888; /* Un color más tenue que el display principal*/
+    text-align: right;
+    width: 100%;
+    overflow-x: auto; /*Permite scroll horizontal si la expresión es muy larga */
+    white-space: nowrap; /* Evita que la expresión se rompa en varias líneas */
+    padding-bottom: 5px; /* Espacio entre la expresión y el número actual */
+}
 
 #display {
     width: 100%;
     height: 200px;
     text-align: end;
-    font-size: 50px;
+    font-size: 3em;
     border: none;
     background-color: #202020;
     color: #FFF;
